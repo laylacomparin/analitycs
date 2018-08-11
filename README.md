@@ -1,6 +1,6 @@
-# Analitycs
+# Analytics
 
-Aula de Analitycs (IMIH) - R e Phyton
+Aula de Analytics (IMIH) - R e Phyton
 
 Regressão Linear:
 
