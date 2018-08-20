@@ -1,7 +1,7 @@
 ################################################
 # CENTRO UNIVERSITÁRIO METODISTA IZABELA HENDRIX
 # Analytics
-# Aula 01
+# Aula 02
 # por Layla Comparin
 ################################################
 
