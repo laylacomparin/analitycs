@@ -129,3 +129,8 @@ bd %>%
   geom_point() +
   stat_smooth(method = 'lm', se = T, col = 'blue')
 
+##### Monte outra regressão e apresente os resultados.
+# Y = isei88 - Váriavel dependente.
+# X = isei88 pai
+# Estime a regressão, interprete os resultados e interprete o intervalo de confiança.
+# 
