@@ -1,7 +1,9 @@
-### Analytics
-## Aula 03
-## Prof. Neylson Crepalde
-##########################
+################################################
+# CENTRO UNIVERSITÁRIO METODISTA IZABELA HENDRIX
+# Analytics
+# Aula 03
+# por Layla Comparin
+################################################
 
 # Se as bibliotecas necessárias não estiveram instaladas, instale
 if (!"readr" %in% installed.packages()) install.packages("readr")
