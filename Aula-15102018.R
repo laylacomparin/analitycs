@@ -1,6 +1,9 @@
-### Analytics
-## Aula
-##########################
+################################################
+# CENTRO UNIVERSITÁRIO METODISTA IZABELA HENDRIX
+# Analytics
+# Aula 15/10/2018
+# por Layla Comparin
+################################################
 
 # instalar pacotes
 
