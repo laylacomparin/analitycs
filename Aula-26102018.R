@@ -1,9 +1,10 @@
-##################################################
-# Analytics - Aula 14 - Regressao Logistica 4"
-# Prof. Neylson
-# 26/10/2018
-# por Larissa Fernandes
-##################################################
+################################################
+# CENTRO UNIVERSIT√ÅRIO METODISTA IZABELA HENDRIX
+# Analytics
+# Aula 26/10/2018
+# por Layla Comparin
+################################################
+
 install.packages("titanic")
 install.packages("ggplot2")
 install.packages("dplyr")
@@ -36,15 +37,15 @@ reg3
 screenreg(list(reg1,reg2,reg3)) #coloca as tres regressoes juntas
 
 # Fazendo o teste de likelihood ( me diz se vale a pena o modelo maix complexo)
-lrtest(reg2,reg1) #me diz se um modelo È melhor que outro - se n„o tiver ...
-                  #È porque os modelos tem o mesmo resultado
-                  # se o p < 0,05 mostra que tem diferenÁa entre eles
+lrtest(reg2,reg1) #me diz se um modelo √© melhor que outro - se n√£o tiver ...
+                  #√© porque os modelos tem o mesmo resultado
+                  # se o p < 0,05 mostra que tem diferen√ßa entre eles
                  # eu analiso pelo P valor (estrelas)
 
 lrtest(reg3,reg2) # reg3 tem ajuste melhor 
 
-#conclus„o: todos eles mostratram que o 3∫ modelo, È o melhor modelo
-#os testes indicaram que REG3 È o melhor modelo entre os estimados 
+#conclus√£o: todos eles mostratram que o 3¬∫ modelo, √© o melhor modelo
+#os testes indicaram que REG3 √© o melhor modelo entre os estimados 
 
 # vamos verificar os resultados
 
@@ -57,10 +58,10 @@ coeficientes = coef(reg3) [-1] # menos o do intercepto
 coeficientes
 (exp(coeficientes)-1) * 100 # chances
 
-# quando eu aumento 01 ano da idade h· uma diminuicao de -3,63% nas chances 
+# quando eu aumento 01 ano da idade h√° uma diminuicao de -3,63% nas chances 
 # homens tem 91,98% a menos de chances de sobrevienvia do que as mulheres
-# quem est· na 2™ classe tem 73,01 % menos chances em relaÁ„o a 1™ clase
-# -92 -- 73 = 19 % / Ou seja a 3™ 19% menos chance de sobrevivencia que a 2™ classe
+# quem est√° na 2¬™ classe tem 73,01 % menos chances em rela√ß√£o a 1¬™ clase
+# -92 -- 73 = 19 % / Ou seja a 3¬™ 19% menos chance de sobrevivencia que a 2¬™ classe
 
 
 # Avaliar o Desempenho  Nosso Modelo -  dado de teste
@@ -72,7 +73,7 @@ dim(bdtest)
 
 # Para avaliar o resultado do modelo,
 # vamos construir uma confusion matrix
-# Vamos primeiro predizer a classificaÁ„o
+# Vamos primeiro predizer a classifica√ß√£o
 # da variavel survived com os dados de teste
 
 pred = predict(reg3, bdtest, 
@@ -89,7 +90,7 @@ verdade = titanic_gender_model$Survived
 t = table(verdade, yhat)
 t
 res = roc(verdade,yhat) #dado real e dado predito
-# Area under the curve: 0.9192 - ·rea debaixo da curva È um resultado excelente 
+# Area under the curve: 0.9192 - √°rea debaixo da curva √© um resultado excelente 
 auc(res)
 plot.roc(res,print.auc = T)
 
